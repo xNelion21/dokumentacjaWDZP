@@ -3,7 +3,7 @@
 1. **Uruchom Docker.** Odpal kontener `db` i `frontend`.
 ![Docker](./img/docker.png)
 
-2. **Uruchom IntelliJ** b¹dŸ inny kompilator kodu.
+2. **Uruchom IntelliJ** bÄ…dÅº inny kompilator kodu.
 
 3. **Uruchom Projekt.**
 ![Uruchomienie](./img/run.png)
@@ -11,4 +11,4 @@
 4. **W terminalu kompilatora** wpisz `npm run dev` w celu uruchomienia frontendu.
 ![Terminal](./img/npm.png)
 
-5. **Projekt jest gotowy** do edycji i przegl¹du.
+5. **Projekt jest gotowy** do edycji i przeglÄ…du.
