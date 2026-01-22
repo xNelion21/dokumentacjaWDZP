@@ -1,4 +1,3 @@
-
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
@@ -13,32 +12,40 @@ export default defineConfig({
 
         sidebar: [
             {
-                text: 'Dokumentacja API',
+                text: 'Wstêp',
                 items: [
-                    { text: 'Opis Endpointów API', link: '/API' },
-                    { text: 'Przyk³ady API', link: '/api-examples' },
-                    { text: 'Funkcjonalnoœci i API', link: '/funkc_srod_api' }
+                    { text: 'O projekcie', link: '/index' },
+                    { text: 'Instrukcja uruchomienia', link: '/uruchomienie' },
+                    { text: 'Sk³ad zespo³u', link: '/GROUP' }
                 ]
             },
             {
-                text: 'Zasoby projektu',
+                text: 'Dokumentacja Produktowa',
                 items: [
-                    { text: 'Strona G³ówna', link: '/index' },
+                    { text: 'Wymagania (PRD)', link: '/PRD' },
+                    { text: 'Relacje bazy danych', link: '/relacje' },
                     { text: 'Backlog prac', link: '/backlog' },
                     { text: 'Estymata prac', link: '/estymata' },
-                    { text: 'Wymagania (PRD)', link: '/PRD' },
-                    { text: 'Konfiguracja narzêdzi', link: '/konf_narzedzi' },
-                    { text: 'Instrukcja uruchomienia', link: '/uruchomienie' },
-                    { text: 'Opis œrodowiska', link: '/opisSrodowiska' },
-                    { text: 'Przebieg Sprintów', link: '/sprinty' },
-                    { text: 'Retrospekcja', link: '/retro1' }
+                    { text: 'Historie Uzytkowania', link: 'historyjki' },
+                      { text: 'Persony', link: 'persony' }
+
                 ]
             },
             {
-                text: 'Standardy i Architektura',
+                text: 'Dokumentacja Projektowa',
                 items: [
+                    { text: 'Dokumentacja API', link: '/API' },
                     { text: 'Architektura Projektu', link: '/architektura' },
-                    { text: 'Zasady wspó³pracy (Contributing)', link: '/contributing' }
+                    { text: 'Opis œrodowiska', link: '/opisSrodowiska' },
+                    { text: 'Konfiguracja narzêdzi', link: '/konf_narzedzi' }
+                ]
+            },
+            {
+                text: 'Przebieg Projektu & Agile',
+                items: [
+                    { text: 'Przebieg Sprintów', link: '/sprinty' },
+                    { text: 'Retrospekcja', link: '/retro1' },
+                    { text: 'Zasady wspó³pracy', link: '/contributing' }
                 ]
             }
         ],
