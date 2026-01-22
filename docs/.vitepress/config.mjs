@@ -1,6 +1,8 @@
+
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+    base: '/dokumentacjaWDZP/',
     title: "Karaoke App - Dokumentacja",
     description: "Dokumentacja projektu zaliczeniowego",
     themeConfig: {
