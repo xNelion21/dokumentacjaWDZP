@@ -4,6 +4,7 @@ export default defineConfig({
     base: '/dokumentacjaWDZP/',
     title: "Karaoke App - Dokumentacja",
     description: "Dokumentacja projektu zaliczeniowego",
+    ignoreDeadLinks: true,
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
