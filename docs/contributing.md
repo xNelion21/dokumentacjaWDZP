@@ -1,36 +1,42 @@
-\### 2. Plik `docs/contributing.md`
+﻿# 🤝 Standardy Współpracy (CONTRIBUTING)
 
-Ten plik opisuje standardy pracy w Waszym zespole (wymóg instrukcji).
+Dokument ten definiuje zasady pracy zespołowej, standardy kodowania oraz proces wdrażania zmian w projekcie **Karaoke Machine**.
 
+---
 
+## 🚀 Workflow Pracy z Kodem
 
-```markdown
+Aby zachować spójność repozytorium i uniknąć konfliktów, trzymamy się poniższych kroków:
 
-\# CONTRIBUTING - Standardy Projektu
+1. **Aktualizacja**: Przed rozpoczęciem pracy zawsze wykonaj `git pull origin main`.
+2. **Praca nad zadaniem**: Zmiany wprowadzamy na dedykowanych branchach funkcyjnych (np. `feature/login-system`) lub bezpośrednio na `main` po uzgodnieniu z zespołem.
+3. **Commitowanie**: Opisy muszą być jasne i wskazywać, co zostało zmienione.
+   * *Przykład:* `fix: poprawa błędu w mapperze piosenek` lub `feat: dodanie wyszukiwarki`.
+4. **Weryfikacja**: Przed wysłaniem kodu (`git push`), upewnij się, że aplikacja buduje się lokalnie i nie zawiera błędów.
 
+---
 
+## 🛠️ Standardy Techniczne
 
-\## Jak wnosić wkład w projekt?
+### Backend (Java / Spring Boot)
+* **Konwencja**: Stosujemy **CamelCase** dla nazw zmiennych i metod.
+* **Optymalizacja**: Obowiązkowe użycie biblioteki **Lombok** (ograniczenie kodu boilerplate).
+* **Mapowanie**: Do konwersji między encjami a DTO wykorzystujemy **MapStruct** lub dedykowane mappery.
 
-1\. \*\*Pobieranie zmian\*\*: Przed rozpoczęciem pracy zawsze wykonaj `git pull origin main`.
+### Frontend (Vue.js)
+* **API**: Wszystkie komponenty budujemy z wykorzystaniem **Composition API**.
+* **Style**: Trzymamy się spójnego systemu klas i komponentów, aby interfejs był jednolity.
 
-2\. \*\*Tworzenie zmian\*\*: Pracujemy na gałęzi `main` (lub dedykowanych branchach funkcyjnych).
+---
 
-3\. \*\*Commitowanie\*\*: Opisy commitów powinny być jasne i w języku polskim lub angielskim (np. "Naprawa błędu w mapperze piosenek").
+## 📝 Dokumentacja i Jakość
 
+* **Aktualizacja API**: Każda nowa funkcjonalność lub zmiana endpointu **musi** zostać odnotowana w pliku `docs/api.md`.
+* **Decyzje**: Kluczowe zmiany w architekturze wymagają stworzenia nowego pliku **ADR**.
+* **Code Review**: W przypadku pracy na osobnych gałęziach, zmiany są scalane dopiero po weryfikacji przez co najmniej jednego innego członka zespołu.
 
+---
 
-\## Standardy kodowania
-
-\- \*\*Java\*\*: Stosujemy CamelCase dla nazw zmiennych i metod. Używamy Lombok do redukcji kodu boilerplate.
-
-\- \*\*Vue\*\*: Komponenty budujemy z wykorzystaniem Composition API.
-
-\- \*\*Dokumentacja\*\*: Każda nowa funkcjonalność API musi zostać odnotowana w pliku `api.md`.
-
-
-
-\## Proces Pull Request
-
-W przypadku pracy na osobnych gałęziach, zmiany są scalane po przejściu testów lokalnych i weryfikacji przez drugiego członka zespołu.
-
+## ⚠️ Komunikacja
+* Problemy techniczne zgłaszamy natychmiast na kanale zespołu.
+* Raz w tygodniu przeprowadzamy krótką synchronizację statusu zadań.

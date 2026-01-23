@@ -1,28 +1,28 @@
-# Diagram Przepływu Danych (DFD)
+﻿# Diagram Przepływu Danych (DFD)
 
 Poniższy schemat przedstawia przepływ informacji w systemie Karaoke Machine – od interakcji użytkownika, przez logikę biznesową, aż po zewnętrzne API i bazę danych hostowaną na Aiven.
 
 ```mermaid
 
-graph TD
+graph 
     %% Definicja aktorów
-    User((Użytkownik))
-    Admin((Administrator))
+    User(("Użytkownik"))
+    Admin(("Administrator"))
 
     subgraph "Warstwa Prezentacji (Frontend)"
-        UI[Interfejs Vue.js]
-        Forms[Formularze i Widoki]
+        UI["Interfejs Vue.js"]
+        Forms["Formularze i Widoki"]
     end
 
     subgraph "Procesy Systemowe (Backend Spring Boot)"
-        Auth[Autoryzacja i Role]
-        Logic[Logika Biznesowa / Serwisy]
-        DataProc[Przetwarzanie Danych]
+        Auth["Autoryzacja i Role"]
+        Logic["Logika Biznesowa / Serwisy"]
+        DataProc["Przetwarzanie Danych"]
     end
 
     subgraph "Magazyny Danych i Serwisy"
-        DB[(PostgreSQL - Aiven)]
-        YT[YouTube Data API v3]
+        DB[("(PostgreSQL - Aiven)")]
+        YT["YouTube Data API v3"]
     end
 
     %% Przepływ danych

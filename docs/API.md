@@ -1,4 +1,4 @@
-Dokumentacja API - Karaoke Machine
+﻿Dokumentacja API - Karaoke Machine
 Wszystkie endpointy zwracają dane w formacie JSON. Adres bazowy dla środowiska lokalnego: http://localhost:8080
 
 ### 1. Autoryzacja (Auth)
@@ -114,7 +114,8 @@ Metoda: `POST`
 
 Body (JSON):
 
- ```json { "isBanned": true }
+ ```json 
+ { "isBanned": true }
 
 ```
 
@@ -138,14 +139,11 @@ Body (JSON):
 
 ```
 
-Zarządzanie Sugestiami
-Pobierz oczekujące sugestie - URL: /api/admin/suggestions/pending
+### Zarządzanie Sugestiami
+- **Pobierz oczekujące sugestie - URL:** `/api/admin/suggestions/pending`
 
-Zatwierdź lub Odrzuć sugestię - URL: /api/admin/suggestions/{id}/status - Metoda: PATCH
-
-Analityka i Statystyki
-URL: /api/admin/stats
-
-Metoda: GET
-
-Opis: Zwraca dane o liczbie odtworzeń i aktywnych użytkownikach.
+- **Zatwierdź lub Odrzuć sugestię - URL:** `/api/admin/suggestions/{id}/status - Metoda: PATCH`
+- **Analityka i Statystyki**
+**URL:** `/api/admin/stats`
+- **Metoda:** ``GET``
+- **Opis: Zwraca dane o liczbie odtworzeń i aktywnych użytkownikach.**
